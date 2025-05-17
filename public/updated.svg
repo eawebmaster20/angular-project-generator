@@ -1,0 +1,100 @@
+<svg viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="900" fill="#f5f7fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">Angular Project Generator</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#777">Skip repetitive setup, jumpstart development</text>
+  
+  <!-- Main Sections -->
+  <!-- User Input Section -->
+  <rect x="50" y="120" width="300" height="485" fill="white" stroke="#ddd" stroke-width="2" rx="8" ry="8" />
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">User Input</text>
+  
+  <!-- User Input Options -->
+  <rect x="60" y="170" width="280" height="50" fill="#e4ebf1" stroke="#ccd6e0" stroke-width="1" rx="6" ry="6" />
+  <text x="200" y="202" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#505a64">Select Angular Version</text>
+
+  <rect x="60" y="230" width="280" height="50" fill="#e4ebf1" stroke="#ccd6e0" stroke-width="1" rx="6" ry="6" />
+  <text x="200" y="262" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#505a64">Configure PWA</text>
+
+  <rect x="60" y="290" width="280" height="50" fill="#e4ebf1" stroke="#ccd6e0" stroke-width="1" rx="6" ry="6" />
+  <text x="200" y="322" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#505a64">Configure HTTPClient</text>
+  
+  <rect x="60" y="350" width="280" height="50" fill="#e4ebf1" stroke="#ccd6e0" stroke-width="1" rx="6" ry="6" />
+  <text x="200" y="382" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#505a64">Graph Libraries (e.g., ChartJS)</text>
+  
+  <rect x="60" y="410" width="280" height="50" fill="#e4ebf1" stroke="#ccd6e0" stroke-width="1" rx="6" ry="6" />
+  <text x="200" y="442" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#505a64">Map Libraries (e.g., OpenLayers)</text>
+  
+  <rect x="60" y="470" width="280" height="50" fill="#e4ebf1" stroke="#ccd6e0" stroke-width="1" rx="6" ry="6" />
+  <text x="200" y="502" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#505a64">Styling Frameworks (e.g., Bootstrap)</text>
+  
+  <rect x="60" y="530" width="280" height="70" fill="#e4ebf1" stroke="#ccd6e0" stroke-width="1" rx="6" ry="6" />
+  <text x="200" y="562" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#505a64">CSS color theme and</text>
+  <text x="195" y="582" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#505a64">typography project's figma file</text>
+  
+  <!-- Server Processing Section -->
+  <rect x="450" y="120" width="300" height="340" fill="white" stroke="#ddd" stroke-width="2" rx="8" ry="8" />
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Server Processing</text>
+  
+  <!-- Server Processing Steps with Pink Background like in the decoupled diagram -->
+  <g>
+    <rect x="480" y="180" width="240" height="50" fill="#fad6ff" stroke="#e5b9e8" stroke-width="1" rx="6" ry="6" />
+    <text x="500" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#333">1. Scaffold New Project</text>
+  </g>
+  
+  <g>
+    <rect x="480" y="240" width="240" height="50" fill="#fad6ff" stroke="#e5b9e8" stroke-width="1" rx="6" ry="6" />
+    <text x="500" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#333">2. Install Selected Libraries</text>
+  </g>
+  
+  <g>
+    <rect x="480" y="300" width="240" height="50" fill="#fad6ff" stroke="#e5b9e8" stroke-width="1" rx="6" ry="6" />
+    <text x="500" y="330" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#333">3. Configure Styling Framework</text>
+  </g>
+  
+  <g>
+    <rect x="480" y="360" width="240" height="50" fill="#fad6ff" stroke="#e5b9e8" stroke-width="1" rx="6" ry="6" />
+    <text x="500" y="390" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#333">4. Inject Custom CSS</text>
+  </g>
+  
+  <!-- This section intentionally left empty as we moved the generate button above -->
+  
+  <!-- Connection Arrows -->
+  <line x1="350" y1="240" x2="490" y2="240" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="350" y1="290" x2="490" y2="290" stroke="#6b7280" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Result Section -->
+  <rect x="150" y="690" width="500" height="130" fill="white" stroke="#ddd" stroke-width="2" rx="8" ry="8" />
+  <text x="400" y="720" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Ready-to-Use Angular Project</text>
+  
+  <!-- Project Output -->
+  <rect x="180" y="740" width="280" height="60" fill="#e4ebf1" stroke="#ccd6e0" stroke-width="1" rx="6" ry="6" />
+  <text x="200" y="760" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#505a64">Project Structure:</text>
+  <text x="210" y="780" font-family="monospace" font-size="12" fill="#505a64">📁 src/app/ (with configurations)</text>
+  <text x="210" y="795" font-family="monospace" font-size="12" fill="#505a64">📄 package.json (with libraries)</text>
+  
+  <!-- Download Button - Green like in the shared database from decoupled diagram -->
+  <rect x="480" y="740" width="140" height="60" fill="#77dd77" stroke="#66bb66" stroke-width="1" rx="6" ry="6" />
+  <text x="550" y="772" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">DOWNLOAD</text>
+  <text x="550" y="790" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">PROJECT</text>
+  
+  <!-- Benefits Section moved to bottom -->
+  <text x="60" y="860" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">Benefits:</text>
+  <text x="150" y="860" font-family="Arial, sans-serif" font-size="14" fill="#333">⚡ Fast Setup</text>
+  <text x="260" y="860" font-family="Arial, sans-serif" font-size="14" fill="#333">🔄 Multiple Angular Versions</text>
+  <text x="450" y="860" font-family="Arial, sans-serif" font-size="14" fill="#333">📊 Pre-configured Libraries</text>
+  <text x="640" y="860" font-family="Arial, sans-serif" font-size="14" fill="#333">🎨 Custom Styling</text>
+  
+  <!-- Generate Button moved up to replace benefits section position -->
+  <rect x="170" y="620" width="140" height="50" fill="#dc143c" stroke="#b01030" stroke-width="1" rx="6" ry="6" />
+  <text x="240" y="652" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">GENERATE</text>
+  
+  <!-- Arrow Definitions -->
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 8 3.5, 0 7" fill="#6b7280" />
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,137 @@
+<div class="container h-100">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="figma-config-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Figma Config</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Project config</button>
+    </li>
+  </ul>
+
+
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="figma-config-tab" tabindex="0">
+      <div class="settings p-3 h-100">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title mb-4">Figma Configuration Settings</h5>
+            <div class="form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Figma Api Token</label>
+                    <input type="text" [(ngModel)]="figmaApiToken" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="figd_Vj...">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Figma File path</label>
+                    <input type="text" [(ngModel)]="figmaFilePath" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="C57bZYzWG...">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 d-flex justify-content-between align-items-end">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" [(ngModel)]="setupFont" id="checkDefault">
+                    <label class="form-check-label" for="checkDefault">
+                      setup fonts families
+                    </label>
+                  </div>
+                  <div class="css-setup">
+                    <div class="form-check form-check-inline">
+                      <input [(ngModel)]="useCss" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" [value]="true" checked>
+                      <label class="form-check-label" for="inlineRadio1">Use Css variables</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input [(ngModel)]="useCss" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" [value]="false">
+                      <label class="form-check-label" for="inlineRadio2">Use Sass variables</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-auto m-2">
+            <div class="d-flex">
+              <button class="btn btn-outline-primary ms-auto" (click)="saveConfig()">save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <div class="settings p-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title mb-4">Angular Project Configuration Settings</h5>
+            <div class="form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Project Name</label>
+                    <input [(ngModel)]="projectName" type="text" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="my-app">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Angular Version</label>
+                    <p-select [options]="angularVersions" class="d-flex" [(ngModel)]="selectedAngularVersion" optionLabel="version" optionValue="version" placeholder="Make your choice" size="small" />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Angular Version</label>
+                    <p-select [options]="angularVersions" class="d-flex" [(ngModel)]="selectedAngularVersion" optionLabel="version" optionValue="version" placeholder="Make your choice" size="small" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Styling Frameworks</label>
+                    <p-multiselect class="d-flex" display="chip" [(ngModel)]="selectedLibraries" [options]="styleLibraries" optionLabel="name" optionValue="code" styleClass="w-full md:w-80" size="small" placeholder="Make your choice" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Graph Libraries</label>
+                    <p-multiselect class="d-flex" display="chip" [(ngModel)]="selectedGraphLibraries" [options]="graphLibraries" optionLabel="name" styleClass="w-full md:w-80" size="small" placeholder="Make your choice" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">BootStrap Version</label>
+                    <p-select class="d-flex" [(ngModel)]="selectedBootstrapVersion" [loading]="loadingBootstrapVersions" [options]="bootstrapVersions" styleClass="w-full md:w-80" size="small" placeholder="Make your choice" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Map Libraries</label>
+                    <p-multiselect class="d-flex" display="chip" [(ngModel)]="selectedMapLibraries" [options]="mapLibraries" optionLabel="name" styleClass="w-full md:w-80" size="small" placeholder="Make your choice" />
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+</div>
+
+<!-- <select [(ngModel)]="selectedVersion">
+  <option *ngFor="let version of versions" [value]="version">Angular {{ version }}</option>
+</select>
+<button (click)="generateProject()">Generate Project</button> -->

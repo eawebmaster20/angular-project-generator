@@ -1,0 +1,10 @@
+.tab-content{
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    height: 26rem;
+    border-radius: 0 0 .75rem .75rem;
+
+    .card, .tab-pane{
+        height: 100%;
+        background-color: #f8fafc;
+    }
+}
